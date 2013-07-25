@@ -13,7 +13,7 @@ tagline: 乱七八糟
         <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
         <div class="post-excerpt">
             {{ post.content | split: '<!-- more -->' | first }}
-            <a href="{{ BASE_PATH }}{{ post.url }}">点击查看全文...</a>
+            <a href="{{ BASE_PATH }}{{ post.url }}">阅读全文...</a>
         </div>
     </li>
   {% endfor %}
