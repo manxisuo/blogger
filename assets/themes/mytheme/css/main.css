@@ -48,7 +48,7 @@ body {
     background-image: -o-linear-gradient(top, #ffe93c, #eb8200);
     background-image: linear-gradient(to bottom, #ffe93c, #eb8200);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe93cff', endColorstr='#ffeb8200', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffe93c', endColorstr='#ffeb8200', GradientType=0);
     border: 1px solid #d4d4d4;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
