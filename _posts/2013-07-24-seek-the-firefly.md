@@ -3,7 +3,7 @@ layout: post
 title: 灵谷寺夜寻萤火虫
 category :
 tagline: ""
-tags : [旅行, 摄影]
+tags : [生活, 旅行, 摄影]
 ---
 {% include JB/setup %}
 
