@@ -84,8 +84,13 @@ body {
 } */
 .post-excerpt {
     padding-left: 2em;
+    color: rgb(136, 136, 136);
 }
 
 blockquote {
     border-left: 8px solid #bbbbbb;
+}
+
+.highlight .lineno {
+    color: #2B91AF;
 }
