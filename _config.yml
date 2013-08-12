@@ -80,8 +80,13 @@ JB:
   # Set 'provider' to the comment provider you want to use.
   # Set 'provider' to false to turn commenting off globally.
   #
+  ## uyan >> provider: uyan
+  ## disqus >> provider: disqus
+  ## duoshuo >> provider: duoshuo
   comments:
-    provider: custom
+    provider: duoshuo
+    duoshuo:
+        short_name: manxisuo
     disqus:
       short_name: isuyun-blogger
     livefyre:

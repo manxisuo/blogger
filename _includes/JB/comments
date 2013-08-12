@@ -11,6 +11,10 @@
   {% include JB/comments-providers/facebook %}
 {% when "custom" %}
   {% include custom/comments %}
+{% when "uyan" %}
+  {% include custom/uyan %}
+{% when "duoshuo" %}
+  {% include custom/duoshuo %}
 {% endcase %}
 
 {% endif %}
