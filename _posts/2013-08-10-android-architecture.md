@@ -6,7 +6,9 @@ tags : [代码, 转载]
 ---
 {% include JB/setup %}
 
-导读：Sans Serif是Google的一位工程师，近日发布了一篇博文非常清楚的描述了Android系统架构，中国移动通信研究院院长黄晓庆在新浪微博上推荐了该文，并认为文中对Android的介绍很好，如下是CSDN对文章的简单编译：
+导读：Sans Serif是Google的一位工程师，近日发布了一篇博文非常清楚的描述了Android系统架构，中国移动通信研究院院长黄晓庆在新浪微博上推荐了该文，并认为文中对Android的介绍很好，如下是CSDN对文章的简单编译。
+
+<!-- more -->
 
 ## Andriod是什么？
 
@@ -14,8 +16,6 @@ tags : [代码, 转载]
 “Android并不是传统的Linux风格的一个规范或分发版本，也不是一系列可重用的组件集成，Android是一个用于连接设备的软件块。”
 
 ![Alt](http://www.oschina.net/uploads/img/201011/25220243_sCoi.png)
-
-<!-- more -->
 
 ## Linux：
 
