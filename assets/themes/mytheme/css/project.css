@@ -1,0 +1,6 @@
+.fake_link {
+    font-size: 20px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}

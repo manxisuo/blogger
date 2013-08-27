@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} - 漫想</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ site.JB.ASSET_PATH }}/css/main.css" rel="stylesheet">
+    <link href="{{ site.JB.ASSET_PATH }}/css/project.css" rel="stylesheet">
+</head>
+<body>
+    <p><a class="fake_link" onclick="history.back()">返回博文</a></p>
+    <div>
+        {{ content }}
+    </div>
+    {% include JB/analytics %}
+</body>
+</html>
