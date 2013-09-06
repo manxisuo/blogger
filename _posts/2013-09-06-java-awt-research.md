@@ -6,15 +6,18 @@ tags : [java]
 ---
 {% include JB/setup %}
 
-AWT(Abstract Window Toolkit)即抽象视窗工具组, 是Java基础类(JFC)的一部分,
+之所以现在还研究AWT, 并不是真得要用它(何况AWT经常被诟病, 很多时候被Swing取代),
+主要目的是研究一下里面的设计思想.
+
+**AWT**(Abstract Window Toolkit)即抽象视窗工具组, 是Java基础类(JFC)的一部分,
 为Java程序提供GUI的标准API. 
+
+<!-- more -->
 
 Java释出的时候, AWT作为Java最弱的组件受到不小的批评.
 最根本的缺点是AWT在原生的用户界面之上仅提供了一个非常薄的抽象层.
 例如, 生成一个AWT的复选框会导致AWT直接调用下层原生例程来生成一个复选框. 不幸的是,
 一个Windows平台上的复选框同MacOS平台或者各种UNIX风格平台上的复选框并不是那么相同.
-
-<!-- more -->
 
 在第二版的Java开发包中, AWT的器件很大程度上被Swing工具包替代.
 Swing通过自己绘制器件而避免了AWT的种种弊端: Swing调用本地图形子系统中的底层例程,
