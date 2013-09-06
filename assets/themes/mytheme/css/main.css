@@ -135,3 +135,10 @@ input#search {
     -moz-box-shadow: 0px 1px 3px #A8ABAB;
     box-shadow: 0px 1px 3px #A8ABAB;
 }
+
+.content > p {
+    text-indent: 2em;
+}
+.content > p > img {
+    margin-left: -2em;
+}
