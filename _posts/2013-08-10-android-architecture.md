@@ -58,6 +58,7 @@ Dalvik虚拟机只执行.dex的可执行文件。当Java程序通过编译，最
 一个Android App包含在一个我们称之为APK的压缩文件夹中，APK并没有什么可说的，需要注意的是Android Manifest——介于App和Android System的接口。
 
 ![Alt](http://www.oschina.net/uploads/img/201011/25220244_YQ8a.png)
+
 ![Alt](http://www.oschina.net/uploads/img/201011/25220244_ZHkB.png)
 
 ## 其他
