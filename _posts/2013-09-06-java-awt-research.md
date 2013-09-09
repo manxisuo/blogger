@@ -150,8 +150,16 @@ frame.setVisible(true);
 {% endhighlight %}
 
 ### (3) GridLayout
+
+略
+
 ### (4) CardLayout
+
+略
+
 ### (5) GridBagLayout
+
+略
 
 ## 5. 事件机制
 
