@@ -1,10 +1,10 @@
 $(function() {
-    $('input#search').val(loadKeyword());
+    // $('input#search').val(loadKeyword());
 
     $('input#search').on('keydown', function(e) {
         if (13 == e.keyCode) {
             var val = $(this).val();
-            saveKeyword(val);
+            // saveKeyword(val);
             if ($.trim(val) == '') {
                 $('.content-0').show();
                 $('.content-1').hide();

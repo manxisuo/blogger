@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 文章列表
-tagline: 乱七八糟
+tagline:
 ---
 {% include JB/setup %}
 
