@@ -77,11 +77,12 @@ body {
 .post-excerpt {
     padding: 10px 10px 20px 0;
 }
-.post-date {
+.post-date, .content .date span {
     font-family: 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
     font-size: 18px;
     color: rgb(136, 136, 136);
 }
+
 /* .content > p, .post-excerpt > p {
     text-indent: 2em;
 }
@@ -89,7 +90,6 @@ body {
     margin-left: -2em;
 } */
 .post-excerpt {
-    padding-left: 2em;
     color: rgb(66, 66, 66);
 }
 
@@ -140,4 +140,11 @@ input#search {
     -webkit-box-shadow: 0px 1px 3px #A8ABAB;
     -moz-box-shadow: 0px 1px 3px #A8ABAB;
     box-shadow: 0px 1px 3px #A8ABAB;
+}
+
+.content > p, .post-excerpt > p {
+    text-indent: 2em;
+}
+.content > p > img, .post-excerpt > p > img {
+    margin-left: -2em;
 }

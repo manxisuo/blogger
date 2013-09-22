@@ -30,16 +30,16 @@
     <hr>
     <div class="pagination">
       <ul>
-      {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; 前一篇</a></li>
+      {% if page.next %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">&larr; 前一篇</a></li>
       {% else %}
-        <li class="prev disabled"><a>&larr; 前一篇</a></li>
+        <li class="next disabled"><a>&larr; 前一篇</a>
       {% endif %}
         <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">归档</a></li>
-      {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">下一篇 &rarr;</a></li>
+      {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">下一篇 &rarr;</a></li>
       {% else %}
-        <li class="next disabled"><a>下一篇 &rarr;</a>
+        <li class="prev disabled"><a>下一篇 &rarr;</a></li>
       {% endif %}
       </ul>
     </div>
