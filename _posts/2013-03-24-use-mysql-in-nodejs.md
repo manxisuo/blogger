@@ -6,6 +6,10 @@ tags : [nodejs]
 ---
 {% include JB/setup %}
 
+本文介绍了怎样在Node.js中使用MySQL进行简单的数据库操作。
+
+<!-- more -->
+
 #### 1. 用npm安装sql模块. 在终端执行：
 
 {% highlight bash linenos %}
@@ -13,8 +17,6 @@ tags : [nodejs]
 {% endhighlight %}
 
 #### 2. 简单的查询：
-
-<!-- more -->
 
 {% highlight javascript linenos %}
     var mysql = require('mysql');  

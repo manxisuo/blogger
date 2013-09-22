@@ -19,6 +19,6 @@ tags : [代码, javascript]
 
 ##注意：
 
-所有内容是保存在本地的，如果清理了网站在本地的数据(例如在chrome中选择 `删除 Cookie 以及其他网站数据和插件数据` )，则<span style="color:red">数据将全部丢失</span>。
+所有内容是保存在本地的，如果清理了网站在本地的数据(例如在chrome中选择 **删除 Cookie 以及其他网站数据和插件数据** )，则<span style="color:red">数据将全部丢失</span>。
 
 
