@@ -64,10 +64,10 @@ function result(data) {
         // 每条结果
         var li = $('<li />');
         var a = $('<a />').attr('href', url).html(title);
-        li.append(a);;
         var p = $('<div class="post-excerpt" />').html(content);
+        li.append(a).append(p);
         
-        ul.append(li).append(p);
+        ul.append(li);
     }
     
     searchContent.append(ul);
