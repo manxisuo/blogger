@@ -10,6 +10,14 @@ tags : [javascript, chrome-extension]
 
 <script type="text/javascript">
 	$('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/endkfhomobijnknngmdfcooaafdmfbfj" />');
+
+	function() {
+		chrome.webstore.install(null, function() {
+			alert('success');
+		}, function() {
+			alert('failed');
+		});
+	}
 </script>
 
 <p>
@@ -24,7 +32,7 @@ tags : [javascript, chrome-extension]
 </ol>
 
 
-<button onclick="chrome.webstore.install()" id="install-button">Add to Chrome</button>
+<button onclick="install()" id="install-button">Add to Chrome</button>
 <script>
 if (chrome.app.isInstalled) {
   document.getElementById('install-button').style.display = 'none';
