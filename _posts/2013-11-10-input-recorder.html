@@ -14,11 +14,17 @@ tags : [javascript, chrome-extension]
 
 	function install() {
 		chrome.webstore.install(url, function() {
-			alert('success');
+			alert('安装成功');
 		}, function() {
-			alert('failed');
+			alert('安装失败');
 		});
 	}
+	
+	$(function() {
+		if (chrome.app.isInstalled) {
+		  document.getElementById('install-button').style.display = 'none';
+		}
+	});
 </script>
 
 <p>
@@ -27,19 +33,16 @@ tags : [javascript, chrome-extension]
 
 <!-- more -->
 
+<h2>说明：</h2>
 <ol>
 <li>记录网站的用户名和密码，下次登录时不用再重新输入。</li>
 <li>记录表单中的数据，以后可以瞬间充填。</li>
 </ol>
 
+<h2>安装：</h2>
+<button onclick="install()" id="install-button">点击安装</button>
 
-<button onclick="install()" id="install-button">Add to Chrome</button>
-<script>
-if (chrome.app.isInstalled) {
-  document.getElementById('install-button').style.display = 'none';
-}
-</script>
-
+<h2>截图：</h2>
 <p>
 <img src="https://ipxqww.dm1.livefilestore.com/y2p51KAVN2Rx6zzMtqP_xdzX6mLgpXmsZlP0jx4SIITJXsPvNhQZVZ1RZz3io6J--eEY2fKU59PCxEAXp6Cq18WI9GnTwxxP5gYOyW84isBaks/input-recorder.png" title="输入域记录器" />
 </p>
