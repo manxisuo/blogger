@@ -1,0 +1,36 @@
+---
+layout: post
+title: chrome扩展--输入域记录器
+tagline: ""
+tags : [javascript, chrome-extension]
+---
+{% include JB/setup %}
+
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/endkfhomobijnknngmdfcooaafdmfbfj" />
+
+<script type="text/javascript">
+	$('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/endkfhomobijnknngmdfcooaafdmfbfj" />');
+</script>
+
+<p>
+记录下网页中的文本框、下拉框、单选框、复选框等输入组件的值，将来可以随时重新填写。
+</p>
+
+<!-- more -->
+
+<ol>
+<li>记录网站的用户名和密码，下次登录时不用再重新输入。</li>
+<li>记录表单中的数据，以后可以瞬间充填。</li>
+</ol>
+
+
+<button onclick="chrome.webstore.install()" id="install-button">Add to Chrome</button>
+<script>
+if (chrome.app.isInstalled) {
+  document.getElementById('install-button').style.display = 'none';
+}
+</script>
+
+<p>
+<img src="https://ipxqww.dm1.livefilestore.com/y2p51KAVN2Rx6zzMtqP_xdzX6mLgpXmsZlP0jx4SIITJXsPvNhQZVZ1RZz3io6J--eEY2fKU59PCxEAXp6Cq18WI9GnTwxxP5gYOyW84isBaks/input-recorder.png" title="输入域记录器" />
+</p>
