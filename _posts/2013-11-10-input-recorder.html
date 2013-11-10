@@ -9,10 +9,11 @@ tags : [javascript, chrome-extension]
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/endkfhomobijnknngmdfcooaafdmfbfj" />
 
 <script type="text/javascript">
-	$('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/endkfhomobijnknngmdfcooaafdmfbfj" />');
+	var url = 'https://chrome.google.com/webstore/detail/endkfhomobijnknngmdfcooaafdmfbfj';
+	$('head').append('<link rel="chrome-webstore-item" href="' + url + '" />');
 
 	function install() {
-		chrome.webstore.install(null, function() {
+		chrome.webstore.install(url, function() {
 			alert('success');
 		}, function() {
 			alert('failed');
