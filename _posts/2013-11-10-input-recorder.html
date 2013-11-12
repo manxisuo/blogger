@@ -14,9 +14,10 @@ tags : [javascript, chrome-extension]
 
 	function install() {
 		chrome.webstore.install(url, function() {
-			alert('安装成功');
-		}, function() {
+			// alert('安装成功');
+		}, function(msg) {
 			// alert('安装失败');
+			alert(msg);
 		});
 	}
 	
