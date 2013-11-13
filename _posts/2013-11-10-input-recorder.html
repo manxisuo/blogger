@@ -8,26 +8,6 @@ tags : [javascript, chrome-extension]
 
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/endkfhomobijnknngmdfcooaafdmfbfj" />
 
-<script type="text/javascript">
-	var url = 'https://chrome.google.com/webstore/detail/endkfhomobijnknngmdfcooaafdmfbfj';
-	$('head').append('<link rel="chrome-webstore-item" href="' + url + '" />');
-
-	function install() {
-		chrome.webstore.install(url, function() {
-			// alert('安装成功');
-		}, function(msg) {
-			// alert('安装失败');
-			alert(msg);
-		});
-	}
-	
-	$(function() {
-		if (chrome.app.isInstalled) {
-		  document.getElementById('install-button').style.display = 'none';
-		}
-	});
-</script>
-
 <p>
 记录下网页中的文本框、下拉框、单选框、复选框等输入组件的值，将来可以随时重新填写。
 </p>
@@ -52,3 +32,23 @@ tags : [javascript, chrome-extension]
 <a href="https://chrome.google.com/webstore/detail/endkfhomobijnknngmdfcooaafdmfbfj">https://chrome.google.com/webstore/detail/endkfhomobijnknngmdfcooaafdmfbfj</a>
 <br />
 <br />
+
+<script type="text/javascript">
+	var url = 'https://chrome.google.com/webstore/detail/endkfhomobijnknngmdfcooaafdmfbfj';
+	$('head').append('<link rel="chrome-webstore-item" href="' + url + '" />');
+
+	function install() {
+		chrome.webstore.install(url, function() {
+			// alert('安装成功');
+		}, function(msg) {
+			// alert('安装失败');
+			alert(msg);
+		});
+	}
+	
+	$(function() {
+		if (chrome.app.isInstalled) {
+		  document.getElementById('install-button').style.display = 'none';
+		}
+	});
+</script>
